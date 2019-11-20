@@ -124,15 +124,14 @@ function endGame():void{
         let winnerWindow = window.open("", "_self");
         winnerWindow.document.write('<html><head><title>YOU ARE THE WINNER!!</title><link rel="stylesheet" type="text/css" href="winner.css"></head><body>');
         winnerWindow.document.write("<h1>" +  player1Name.toUpperCase() + " IS THE WINNER!!!");
-        winnerWindow.document.write("<button type=button onclick=history.back()>Back To Game</button>");
+        winnerWindow.document.write("<button type=button onclick=location.reload()>Back To Game</button>");
         winnerWindow.document.write('</body></html>');
     }
     if(score2 > score1){
         let winnerWindow = window.open("", "_self");
         winnerWindow.document.write('<html><head><title>YOU ARE THE WINNER!!</title><link rel="stylesheet" type="text/css" href="winner.css"></head><body>');
         winnerWindow.document.write("<h1>" +  player2Name.toUpperCase() + " IS THE WINNER!!!</h1>");
-        winnerWindow.document.write("<button type=button onclick=history.back()>Back To Game</button>");
+        winnerWindow.document.write("<button type=button onclick=location.reload()>Back To Game</button>");
         winnerWindow.document.write('</body></html>');
     }
-    createNewGame();
 }
