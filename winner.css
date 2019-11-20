@@ -1,0 +1,17 @@
+body{
+    background-image: linear-gradient(-90deg, blue, purple);
+}
+
+h1{
+    text-align: center;
+    padding-top: 15%;
+    font-size: 5em;
+    color: rgb(127, 172, 199);
+}
+
+button{
+    float: right;
+    text-align: center;
+    margin: 7%;
+    background-color: rgb(86, 190, 255);
+}
