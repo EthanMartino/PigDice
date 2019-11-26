@@ -37,6 +37,9 @@ function createNewGame() {
     if (player1Name.trim() == "" || player2Name.trim() == "") {
         alert("Both players must enter a name.");
     }
+    else if (player1Name.trim() == player2Name.trim()) {
+        alert("Please enter two different names.");
+    }
     //if both players do have a name start the game!
     else {
         document.getElementById("turn").classList.add("open");
